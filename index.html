@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock paper scissors - Game</title>
+    </head>
+    <body>
+
+        <button onclick="
+        const computerMove = pickComputerMove();
+        
+        if(computerMove === 'rock'){
+          result = 'tie';
+        }else if(computerMove === 'paper'){
+        result = 'loose';
+        }else if (computerMove === 'scissors'){
+            result = 'win';
+        }
+
+        document.getElementById('name').innerHTML= (` you picked rock . computer picked ${computerMove} . ${result}`);
+            
+            ">Rock</button>
+
+        <button onclick="
+         const computerove =  pickComputerMove();
+        
+        if(computerMove === 'rock'){
+          result = 'win';
+        }else if(computerMove === 'paper'){
+        result = 'tie';
+        }else if (computerMove === 'scissors'){
+            result = 'loose';
+        }
+
+        document.getElementById('name').innerHTML= (` you picked paper . computer picked ${computerMove} . ${result}`);
+        ">paper</button>
+
+
+        <button onclick=" const n =  pickComputerMove();
+        
+        if(computerMove === 'rock'){
+          result = 'loose';
+        }else if(computerMove === 'paper'){
+        result = 'win';
+        }else if (computerMove === 'scissors'){
+            result = 'tie';
+        }
+
+        document.getElementById('name').innerHTML= (` you picked scissors . computer picked ${computerMove} . ${result}`);
+        ">scissors</button>
+        <br/> <br/> <br/>
+
+<p id="name"></p>
+
+<script rel="text/javascript" src="game.js"></script>
+
+   
+
+
+
+    </body>
+</html>
